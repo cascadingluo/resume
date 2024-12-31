@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "B612 Mono";
+}
+
+body {
+    border: 1px solid #000;
+    background: linear-gradient(180deg, #070010 15.99%, #370376 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    font-family: "B612 Mono";
+    background: rgba(195, 207, 255, 0.10);
+    backdrop-filter: blur(2px); 
+    padding: 20px;
+    border-bottom: 2px solid #370376;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header-title welcome {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left; /* Aligns Welcome to the left */
+    margin-left: 10px; /* Adds spacing from the left edge */
+}
+
+.header-title email {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: right; /* Aligns email to the right */
+    margin-right: 10px; /* Adds spacing from the right edge */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px; 
+    margin: 100px 50px;
+}
+.profile-section {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align within the column */
+    text-align: center;
+    gap: 10px; /* Add spacing between the image and text */
+}
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.intro-text {
+    font-size: 1.5rem;
+    color: #ff79c6;
+    margin-top: 10px;
+}
+.hero-text {
+    max-width: 60%; /* Restrict the width of the text */
+    text-align: left; /* Align text to the left */
+}
+.hero-text h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: "B612 Mono";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hero-text p {
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "B612 Mono";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px; /* 180% */
+}
+.hero-text .sub {
+    color: #FFF;
+    text-align: center;
+    font-family: "B612 Mono";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.cta {
+    margin-top: 20px;
+}
+.highlight {
+    width: 199px;
+    height: 64px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: "B612 Mono";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.resume-button {
+    padding: 10px 20px;
+    background: #ff79c6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Contact Links */
+.contacts-links {
+    /* align-items: center; */
+    margin: 20px;
+}
+.contact-icon {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #ff79c6;
+    font-size: 1.2rem;
+}
+.contact-email {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+
+/* Skills Section */
+.skills {
+    padding: 20px;
+}
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.skills-grid div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Experience Section */
+.experience {
+    padding: 20px;
+}
+.experience-card {
+    background: #1e1e2f;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.experience-card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
