@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "B612 Mono";
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 
 /* Header */
 header {
-    font-family: "B612 Mono";
+    /* font-family: "B612 Mono"; */
     background: rgba(195, 207, 255, 0.10);
     backdrop-filter: blur(2px); 
     padding: 20px;
@@ -88,7 +89,7 @@ header {
 .hero-text h2 {
     color: #FFF;
     text-align: center;
-    font-family: "B612 Mono";
+    /* font-family: "B612 Mono"; */
     font-size: 55px;
     font-style: normal;
     font-weight: 700;
@@ -98,7 +99,7 @@ header {
     flex-shrink: 0;
     color: #FFF;
     text-align: center;
-    font-family: "B612 Mono";
+    /* font-family: "B612 Mono"; */
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -107,7 +108,7 @@ header {
 .hero-text .sub {
     color: #FFF;
     text-align: center;
-    font-family: "B612 Mono";
+    /* font-family: "B612 Mono"; */
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -127,7 +128,7 @@ header {
     height: 64px;
     flex-shrink: 0;
     text-align: center;
-    font-family: "B612 Mono";
+    /* font-family: "B612 Mono"; */
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -189,4 +190,97 @@ header {
 .experience-card img {
     width: 100px;
     margin-bottom: 15px;
+}
+.side-projects {
+    padding: 20px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.projects-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.project-item1 img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.project-item2 img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.project-item p {
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+/* Related Courses Section */
+.related-courses {
+    padding: 20px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.related-courses img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.courses-button {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    background: #ff79c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 80%;
+    height: 60px;
+}
+.courses-button:hover {
+    background: #e055a4;
+}
+
+/* Back to Top Button */
+footer {
+    text-align: center;
+    margin: 40px 0;
+}
+.back-to-top {
+    padding: 10px 20px;
+    background: #e055a4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-to-top:hover {
+    background: #290259;
+}
+
+/* Section Spacing Improvements */
+section {
+    margin-bottom: 40px;
+}
+h3 {
+    font-size: 2rem;
+    color: #ff79c6;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: white;
+    text-align: center;
 }
