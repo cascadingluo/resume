@@ -65,7 +65,7 @@ header {
     margin: 100px 50px;
 }
 .profile-section {
-    display: flex;
+    flex: 2;
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center-align within the column */
     text-align: center;
@@ -109,7 +109,7 @@ header {
     color: #FFF;
     text-align: center;
     /* font-family: "B612 Mono"; */
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -123,15 +123,26 @@ header {
 .cta {
     margin-top: 20px;
 }
-.highlight {
-    width: 199px;
-    height: 64px;
-    flex-shrink: 0;
+.hero-text p {
+    color: #FFF;
     text-align: center;
     /* font-family: "B612 Mono"; */
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.highlight {
+    background: linear-gradient(90deg, #fa008d, #5b00ed); /* Define your gradient colors */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
 }
 .resume-button {
     padding: 10px 20px;
@@ -184,7 +195,7 @@ header {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 70%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 .experience-card img {
