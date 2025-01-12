@@ -72,8 +72,7 @@ header {
     gap: 10px; /* Add spacing between the image and text */
 }
 .profile-photo {
-    width: 250px;
-    height: 250px;
+    width: 50%;
     border-radius: 50%;
     flex-shrink: 0;
 }
@@ -122,6 +121,7 @@ header {
 }
 .cta {
     margin-top: 20px;
+    text-align: center;
 }
 .hero-text p {
     color: #FFF;
@@ -153,24 +153,46 @@ header {
     border-radius: 5px;
     margin-left: 10px;
 }
-
 /* Contact Links */
-.contacts-links {
-    /* align-items: center; */
-    margin: 20px;
-}
-.contact-icon {
-    text-decoration: none;
-    margin: 0 10px;
-    color: #ff79c6;
-    font-size: 1.2rem;
-}
-.contact-email {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #ddd;
+.contact-links {
+    display: grid; /* Keep grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center the grid content */
+    align-items: center; /* Align items vertically in the grid */
+    margin: 20px 0;
 }
 
+/* Inside each contact icon block */
+.contact-icons1, .contact-icons2 {
+    display: flex; /* Flexbox inside each grid item */
+    flex-direction: row; /* Align items horizontally (icon + text) */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Add space between the icon and the text */
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    width: auto; /* Allow flexible width */
+}
+
+/* Styling the icons */
+.contact-icons1 img, .contact-icons2 img {
+    width: 30%; /* Set size for icons */
+    border-radius: 50%; /* Optional: Make them circular */
+    align-items: center;
+}
+
+/* Styling the links */
+.contact-icons1 a, .contact-icons2 a {
+    text-decoration: none; /* Remove underline */
+    color: #ff79c6; /* Pink text */
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.contact-icons1 a:hover, .contact-icons2 a:hover {
+    color: #e055a4; /* Change color on hover */
+}
 
 /* Skills Section */
 .skills {
@@ -237,7 +259,6 @@ header {
 .related-courses {
     padding: 20px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     text-align: center;
 }

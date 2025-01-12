@@ -34,8 +34,14 @@
                 <button class="resume-button">download one-page resume</button>
             </div>
             <div class="contact-links">
-                <a href="https://www.linkedin.com/in/luo-xu-572636239/" class="contact-icon linkedin">LinkedIn</a>
-                <a href="https://github.com/cascadingluo" class="contact-icon github">GitHub</a>
+                <div class="contact-icons1">
+                    <img src="linkedin-logo.webp" alt="LinkedIn Logo" class="contact-icon">
+                    <a href="https://www.linkedin.com/in/luo-xu-572636239/" class="contact-icon linkedin">LinkedIn</a>
+                </div>
+                <div class="contact-icons2">
+                    <img src="github-logo.svg" alt="GitHub Logo" class="contact-icon">
+                    <a href="https://github.com/cascadingluo" class="contact-icon github">GitHub</a>
+                </div>
             </div>
             <!-- <p class="contact-email">contacts [luo.professionale@gmail.com]</p> -->
         </div>
@@ -70,7 +76,7 @@
             </p>
         </div>
         <div class="experience-card">
-            <img src="college-loops-logo.png" alt="College Loops Logo">
+            <img src="gwc-logo.png" alt="College Loops Logo">
             <p>
                 involved using communication skills collaborating with outside company collaborators, girls 
                 who code clubs/communities, and facilitators. implement and talk about experiences regrading 
@@ -108,7 +114,8 @@
         <p>
             while being a cs and business student is a priority, i am also an artist. my instagram and 
             tiktok is mostly where i publish videos and artworks. i focus mostly in the realm of digital 
-            art and has recently gotten into 3d sculpting. meta also paid me as an creator, which was an exciting opportunity. 
+            art and has recently gotten into 3d sculpting. meta also paid me as an creator back when i was 
+            most active, which was an exciting opportunity. 
         </p>
         <div class="projects-gallery">
             <div class="project-item1">
@@ -126,7 +133,6 @@
     <footer>
         <button class="back-to-top" onclick="scrollToTop()">back to the top</button>
         <script>
-            // Show the button when the user scrolls down
             window.onscroll = function() {
                 const scrollToTopButton = document.querySelector('.scroll-to-top');
                 if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -135,8 +141,6 @@
                     scrollToTopButton.style.display = 'none';
                 }
             };
-        
-            // Scroll to the top when the button is clicked
             function scrollToTop() {
                 window.scrollTo({
                     top: 0,
